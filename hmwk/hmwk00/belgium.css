@@ -1,0 +1,21 @@
+.bordered {
+  border: 2px solid #ee295c;
+  border-collapse: collapse;
+  border-radius: 1em;
+}
+
+#footer h2 {
+  background-color: white;
+  padding-left: 1em;
+}
+
+h1 {
+  color: #060606;
+  background-color: #e6bd21;
+}
+
+h2 {
+  color: #e6bd21;
+  background-color: #060606;
+}
+/*# sourceMappingURL=belgium.css.map */
