@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Top</h1>
+    <h3 id="greeting">???</h3>
+    <script>
+      document.write("Hi");
+      document.write("<h2>" + new Date()+"</h2>");
+      console.log("Super sekrit message.")
+     
+      let hours= new Date().getHours();
+      console.log("The hours are " + hours);
+      let message = "????";
+      if(hours < 12){
+          let xxxx = "howdy";
+          message = "Good Morning";
+      }else{
+          message = "Good Evening";
+      }
+      
+      document.write("<h2>"+message+"</h2>");
+      console.log(message);
+      //alert(message);
+
+      //message = new Date();
+
+      console.log (3**2)
+      console.log((2**3)**2)
+
+      var greet = document.getElementById("greeting");
+      console.log(greet);
+      console.log("The innerHTML is " + greet.innerHTML);
+      greet.innerHTML = message;
+
+      console.log(36 == 36);
+      console.log("36" == 36);
+      console.log("36"===36);
+      console.log(4*9 === 36)
+    </script>
+  </body>
+</html>
