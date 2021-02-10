@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Peeps</title>
+    <script src="./Person.js"></script>
+    <script>
+        function init(){
+            var pn = new Person("Fred","Flintstone", 1999);
+            console.log(pn);
+            var whence = document.getElementById("top");
+            console.log(whence);
+            whence.innerHTML=pn.getName();
+        }
+    </script>
+</head>
+<body onload="init()">
+    <h1  id="top">People</h1>
+
+    
+</body>
+</html>
