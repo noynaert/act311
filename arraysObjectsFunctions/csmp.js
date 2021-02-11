@@ -1,7 +1,7 @@
 // 20201116085805
 // http://127.0.0.1:5000/api/v1/courses/?semester=fall&year=2021&department=CSMP
 
-var csmp=[
+const courses = [
     {
       "course": "ACT102",
       "course_dates": {
@@ -4265,4 +4265,4 @@ var csmp=[
       "type": "Independent Research"
     }
   ]
-  ;
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSMP</title>
+
+    <script src="./csmp.js"></script>
+    <script>
+      var crn = [];
+      /*
+        async function getCourses(){
+            console.log("In getCourses()")
+            import("./csmp.js").then((module) => {
+           // console.log(module.courses);
+        
+            crn = module.courses;
+            console.log(crn);
+            return"bingo";
+          });
+        }
+       */
+        var lines = "";
+        function display(line){
+          lines+=line.crn+' '+line.course;
+          lines+=" "+line.instructor;
+          if(line.days!==undefined)
+          for(i in line.days){
+            var meet = " "+line.days[i]+ " at " + line.times[i];
+          }
+          lines+=meet;
+          lines+="\n";
+        }
+
+      function simple() {
+        console.log("In simple()");
+        //console.log(courses);
+        
+
+        courses.forEach(display);
+        console.log(lines)
+      }
+    </script>
+  </head>
+  <body onload="simple()">
+    <h1>CSMP</h1>
+    <pre id="coursesList"></pre>
+  </body>
+</html>

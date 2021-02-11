@@ -5,4 +5,7 @@ function Person (firstName,last,yearBorn){
     this.getName = function(){
        return this.first+ " "+this.last;
     };
+    this.addMiddle(middle){
+        this.middle = middle;
+    }
 }
